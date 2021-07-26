@@ -39,10 +39,8 @@ $lunghezza= count($partite);
 
     <?php for($i = 0; $i<$lunghezza; $i++) { ?>
         <div style="margin-bottom:20px">
-            <?php echo $partite[$i]['squadra1']; ?>
-            <?php echo $partite[$i]['squadra2']; ?>
-            <?php echo $partite[$i]['punteggio1']; ?>
-            <?php echo $partite[$i]['punteggio2']; ?>
+            <?php echo $partite[$i]['squadra1'] . '-' . $partite[$i]['squadra2'] . '|' . $partite[$i]['punteggio1'] . '-' . $partite[$i]['punteggio2'] ?>
+           
         </div>
     <?php } ?>
 
